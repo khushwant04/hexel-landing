@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav className="w-full h-14 border border-r-0 border-l-0 border-neutral-800 relative">
             <div className="h-full shadow-sm flex items-center justify-between px-4">
                 <div className="flex items-center space-x-8">
-                    <Link className='font-semibold' href="/">
+                    <Link className='font-semibold' href="http://20.193.158.159/">
                         Hexel Studio
                     </Link>
                     {/* Desktop Navigation */}

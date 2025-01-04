@@ -13,7 +13,7 @@ const Navbar = () => {
     const Navitems: NavItem = {
         Research: "/research",
         Company: "/company",
-        Services: "https://huggingface.co/spaces/khushwant04/meta-llama-Llama-3.2-3B-Instruct",
+        Services: "/services",
         Docs: "/docs",
     };
 

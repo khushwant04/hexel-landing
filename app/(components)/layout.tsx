@@ -3,7 +3,7 @@ import React from 'react'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className='text-white w-full min-h-screen'>
+        <div className='text-white w-full min-h-screen dark'>
             {/* Fixed Navbar with matching padding */}
             <div className='fixed top-0 left-0 right-0 z-50 bg-black
         px-4         /* Mobile padding */

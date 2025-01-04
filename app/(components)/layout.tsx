@@ -14,7 +14,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       '>
                 <Navbar />
             </div>
-            {children}
+
+            {/* Main content with matching padding */}
+            <div className='w-full
+        px-4         /* Mobile padding */
+        sm:px-6      /* Small screens */
+        md:px-12     /* Medium screens */
+        lg:px-16     /* Large screens */
+        xl:px-56     /* Extra large screens */
+      '>
+                {children}
+            </div>
         </div>
     )
 }

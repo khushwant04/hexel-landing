@@ -1,5 +1,4 @@
 import Navbar from './Navbar'
-import { FlipWordsHero } from './FlipWords'
 import CompanyInfoSlider from './company-info-slider'
 
 const Hero = () => {

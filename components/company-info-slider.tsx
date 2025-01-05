@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Card } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+
 
 interface SlideContent {
   id: number
@@ -79,7 +79,7 @@ export default function CompanyInfoSlider() {
         className="relative flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-        {slides.map((slide, index) => (
+        {slides.map((slide) => (
           <Card
             key={slide.id}
             className="w-full flex-shrink-0 bg-black text-white border-none rounded-3xl"

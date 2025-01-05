@@ -1,5 +1,8 @@
 import type { Config } from "tailwindcss"
 import animate from 'tailwindcss-animate'
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 const config = {
   darkMode: ["class"],
   content: [
@@ -18,6 +21,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,8 +80,19 @@ const config = {
       },
     },
   },
-  plugins: [animate,
-  ],
+  plugins: [animate,  addVariablesForColors,],
 } satisfies Config
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config

@@ -16,7 +16,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             {/* Main content with matching padding */}
-            <div className='w-full
+            <div className='mt-16 w-full
         px-4         /* Mobile padding */
         sm:px-6      /* Small screens */
         md:px-12     /* Medium screens */

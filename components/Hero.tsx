@@ -1,5 +1,6 @@
 import Navbar from './Navbar'
 import { FlipWordsHero } from './FlipWords'
+import CompanyInfoSlider from './company-info-slider'
 
 const Hero = () => {
   return (
@@ -30,7 +31,8 @@ const Hero = () => {
             md:pt-16     /* Medium screens */
             lg:pt-20     /* Large screens */
           '>
-            <FlipWordsHero />
+            {/* <FlipWordsHero /> */}
+            <CompanyInfoSlider />
           </div>
         </div>
       </div>

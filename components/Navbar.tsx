@@ -17,7 +17,7 @@ const Navbar = () => {
         Docs: "/docs",
     };
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://20.193.158.159";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://console.hexelstudio.com/";
 
     return (
         <nav className="w-full h-14 border border-r-0 border-l-0 border-neutral-800 relative">

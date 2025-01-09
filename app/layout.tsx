@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Hexel Studio - Transforming AI Solutions",
   description:
     "Hexel Studio empowers businesses with cutting-edge AI and machine learning solutions, including Pixel Forge, Tensor Insight, and Agent Workbench. Discover how we transform data into dynamic solutions.",
+  icons: {
+    icon: "/icon.ico",
+  },
   keywords: [
     "Hexel Studio",
     "AI solutions",
